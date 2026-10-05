@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Select Template</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+
+        <span class="logo">Portfolio Generator</span>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="manage.html">Manage Portfolio</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="page">
+    <div class="container">
+
+        <div class="page-title">
+
+            <p class="label">SELECT TEMPLATE</p>
+
+            <h1>Choose your portfolio style</h1>
+
+            <p>
+                Your saved information will not be changed.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <!-- SIMPLE -->
+
+            <div class="card">
+
+                <div class="template-sample simple">
+                    SIMPLE
+                </div>
+
+                <h3>Simple</h3>
+
+                <p>
+                    Clean professional résumé layout.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn choose-template"
+                    data-template="simple"
+                >
+                    Select Simple
+                </button>
+
+            </div>
+
+
+            <!-- MODERN -->
+
+            <div class="card">
+
+                <div class="template-sample modern">
+                    MODERN
+                </div>
+
+                <h3>Modern</h3>
+
+                <p>
+                    Cards, grids and skill badges.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn choose-template"
+                    data-template="modern"
+                >
+                    Select Modern
+                </button>
+
+            </div>
+
+
+            <!-- CREATIVE -->
+
+            <div class="card">
+
+                <div class="template-sample creative">
+                    CREATIVE
+                </div>
+
+                <h3>Creative</h3>
+
+                <p>
+                    Bold dark layout with creative cards and purple accents.
+                </p>
+
+                <button
+                    type="button"
+                    class="btn choose-template"
+                    data-template="creative"
+                >
+                    Select Creative
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/templates.js"></script>
+
+</body>
+</html>

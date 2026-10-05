@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container nav">
+
+        <span class="logo">Portfolio Generator</span>
+
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="page" id="managePage">
+    <div class="container">
+
+        <div class="manage-card">
+
+            <p class="label">MANAGE PORTFOLIO</p>
+
+            <h1 id="manageName">Your Portfolio</h1>
+
+
+            <p id="templateRow" style="display: none;">
+                Template:
+                <strong id="templateName">Not selected</strong>
+            </p>
+
+
+            <p id="portfolioStatus"></p>
+
+
+            <div
+                class="manage-actions"
+                id="manageActions"
+                style="display: none;"
+            >
+
+                <a id="viewPortfolio" class="btn">
+                    View Portfolio
+                </a>
+
+                <a href="portfolio-form.html" class="btn outline">
+                    Edit Information
+                </a>
+
+                <a href="templates.html" class="btn outline">
+                    Change Template
+                </a>
+
+                <button
+                    type="button"
+                    class="btn danger"
+                    onclick="deletePortfolio()"
+                >
+                    Delete Portfolio
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-config.js"></script>
+<script src="js/portfolio.js"></script>
+
+</body>
+</html>

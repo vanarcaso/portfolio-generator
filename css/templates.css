@@ -1,0 +1,517 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background: #f8fafc;
+}
+
+
+/* NAVIGATION */
+
+.portfolio-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.portfolio-nav div {
+    display: flex;
+    gap: 22px;
+}
+
+.portfolio-nav a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.portfolio-nav a:hover {
+    color: #2563eb;
+}
+
+
+/* COMMON */
+
+.loading {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skills span {
+    display: inline-block;
+    margin: 4px;
+    padding: 7px 12px;
+
+    background: #dbeafe;
+    border-radius: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+}
+
+
+/* =========================
+   SIMPLE
+   ========================= */
+
+.simple-layout {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 45px;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.simple-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.simple-info {
+    max-width: 600px;
+}
+
+.simple-info h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+.simple-info p {
+    margin: 6px 0;
+}
+
+.simple-header .profile-photo {
+    width: 150px;
+    height: 150px;
+}
+
+.simple-about {
+    padding: 25px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.simple-about h2 {
+    margin-top: 0;
+}
+
+.simple-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+    padding: 30px 0;
+}
+
+.simple-grid section {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.simple-layout h2 {
+    color: #1e293b;
+}
+
+.simple-layout h3 {
+    margin-bottom: 5px;
+}
+
+.simple-layout p {
+    line-height: 1.4;
+}
+
+.simple-experience {
+    padding-top: 10px;
+}
+
+.simple-layout .links a {
+    color: #2563eb;
+}
+
+
+/* =========================
+   MODERN
+   ========================= */
+
+.modern-layout,
+.creative-layout {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.modern-hero {
+    padding: 40px;
+    text-align: center;
+
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+}
+
+.modern-hero .profile-photo {
+    width: 150px;
+    height: 150px;
+
+    margin-bottom: 15px;
+    border: 5px solid white;
+}
+
+.modern-hero h1 {
+    margin: 5px 0;
+    font-size: 36px;
+}
+
+.modern-course {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.modern-about {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.4;
+}
+
+.modern-links {
+    margin-top: 20px;
+}
+
+.modern-links a {
+    display: inline-block;
+
+    margin: 5px;
+    padding: 8px 14px;
+
+    color: #2563eb;
+    background: white;
+
+    border: 1px solid #2563eb;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+.modern-links a:hover {
+    background: #dbeafe;
+}
+
+.modern-grid,
+.creative-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.modern-grid {
+    margin-top: 25px;
+}
+
+.modern-card,
+.creative-card {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.modern-card {
+    background: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.modern-card h2 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.modern-card p {
+    line-height: 1.4;
+}
+
+.modern-card a {
+    color: #2563eb;
+}
+
+.modern-wide {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================
+   CREATIVE
+   ========================= */
+
+.creative-hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #0f172a;
+    color: white;
+
+    border-radius: 18px;
+}
+
+.creative-photo {
+    padding: 35px;
+    text-align: center;
+}
+
+.creative-photo .profile-photo {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #8b5cf6;
+}
+
+.creative-intro {
+    padding: 40px;
+}
+
+.creative-hello {
+    margin: 0;
+    font-size: 22px;
+}
+
+.creative-intro h1 {
+    margin: 5px 0 10px;
+
+    font-size: 48px;
+    color: #a78bfa;
+}
+
+.creative-course {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.creative-links {
+    margin-top: 20px;
+}
+
+.creative-links a {
+    display: inline-block;
+
+    margin: 5px 8px 5px 0;
+    padding: 8px 14px;
+
+    color: white;
+
+    border: 1px solid #a78bfa;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+.creative-links a:hover {
+    background: #8b5cf6;
+}
+
+.creative-about {
+    margin-top: 25px;
+    padding: 30px;
+
+    background: white;
+
+    border-left: 5px solid #8b5cf6;
+    border-radius: 12px;
+}
+
+.creative-about h2 {
+    margin-top: 0;
+}
+
+.creative-about p {
+    line-height: 1.4;
+}
+
+.creative-grid {
+    margin-top: 20px;
+}
+
+.creative-card {
+    background: #f8fafc;
+}
+
+.creative-card h2 {
+    margin-top: 0;
+    color: #7c3aed;
+}
+
+.creative-card p {
+    line-height: 1.4;
+}
+
+.creative-card .skills span {
+    background: #ede9fe;
+    color: #4c1d95;
+}
+
+
+/* CREATIVE PROJECT LINK */
+
+.creative-card a {
+    display: inline-block;
+
+    margin-top: 8px;
+    padding: 7px 12px;
+
+    color: #7c3aed;
+    background: #ede9fe;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.creative-card a:hover {
+    background: #ddd6fe;
+}
+
+
+/* CREATIVE CONTACT */
+
+.creative-contact {
+    margin-top: 20px;
+    padding: 25px;
+
+    background: #0f172a;
+    color: white;
+
+    border-radius: 14px;
+}
+
+.creative-contact h2 {
+    margin-top: 0;
+    color: #a78bfa;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    /* NAVIGATION */
+
+    .portfolio-nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .portfolio-nav div {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    /* SIMPLE */
+
+    .simple-layout {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .simple-header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .simple-info h1 {
+        font-size: 30px;
+    }
+
+    .simple-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    /* MODERN */
+
+    .modern-layout,
+    .creative-layout {
+        margin: 20px;
+        padding: 0;
+    }
+
+    .modern-hero {
+        padding: 30px 20px;
+    }
+
+    .modern-hero h1 {
+        font-size: 30px;
+    }
+
+    .modern-grid,
+    .creative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modern-wide {
+        grid-column: auto;
+    }
+
+
+    /* CREATIVE */
+
+    .creative-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .creative-photo {
+        padding-bottom: 10px;
+    }
+
+    .creative-photo .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .creative-intro {
+        padding: 20px 25px 35px;
+    }
+
+    .creative-intro h1 {
+        font-size: 36px;
+    }
+}
