@@ -395,3 +395,17 @@ async function deletePortfolio() {
 if (get("managePage")) {
     loadManage();
 }
+
+const cancelButton = document.getElementById("cancelButton");
+
+if (cancelButton) {
+    cancelButton.addEventListener("click", async function () {
+        const portfolio = await getPortfolio();
+
+        if (portfolio) {
+            location.href = "manage.html";
+        } else {
+            location.href = "index.html";
+        }
+    });
+}
