@@ -73,16 +73,20 @@ async function loadPortfolio() {
     return;
 }
 
+if (!p.selected_template) {
+    location.href = "templates.html";
+    return;
+}
+
 if (p.selected_template === "simple") {
-    portfolioView.innerHTML = simple(data);
+    simple(data);
 } else if (p.selected_template === "modern") {
-    portfolioView.innerHTML = modern(data);
+    modern(data);
 } else if (p.selected_template === "creative") {
-    portfolioView.innerHTML = creative(data);
+    creative(data);
 } else {
     location.href = "templates.html";
 }
-
 }
 /* HELPERS */
 
