@@ -83,7 +83,7 @@ if (p.selected_template === "simple") {
     location.href = "templates.html";
 }
 
-
+}
 /* HELPERS */
 
 function photo(p) {
