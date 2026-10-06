@@ -358,3 +358,28 @@ function creative(data) {
         </main>
     `;
 }
+
+const templateBackButton = document.getElementById("templateBackButton");
+
+if (templateBackButton) {
+    templateBackButton.addEventListener("click", async function () {
+        const id = localStorage.getItem("portfolio_id");
+
+        if (!id) {
+            location.href = "portfolio-form.html";
+            return;
+        }
+
+        const { data } = await db
+            .from("portfolios")
+            .select("selected_template")
+            .eq("id", id)
+            .maybeSingle();
+
+        if (data && data.selected_template) {
+            location.href = "manage.html";
+        } else {
+            location.href = "portfolio-form.html";
+        }
+    });
+}
