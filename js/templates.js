@@ -68,13 +68,19 @@ async function loadPortfolio() {
         experiences: exp.data || []
     };
 
-    if (p.selected_template === "modern") {
-        modern(data);
-    } else if (p.selected_template === "creative") {
-        creative(data);
-    } else {
-        simple(data);
-    }
+    if (!p.selected_template) {
+    location.href = "templates.html";
+    return;
+}
+
+if (p.selected_template === "simple") {
+    portfolioView.innerHTML = simple(data);
+} else if (p.selected_template === "modern") {
+    portfolioView.innerHTML = modern(data);
+} else if (p.selected_template === "creative") {
+    portfolioView.innerHTML = creative(data);
+} else {
+    location.href = "templates.html";
 }
 
 
