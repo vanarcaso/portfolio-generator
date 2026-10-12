@@ -109,6 +109,11 @@ nav a:hover {
 /* HOME HERO */
 
 .hero {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+
     padding: 60px 0;
 
     background: #f8fafc;
@@ -154,7 +159,7 @@ nav a:hover {
 }
 
 
-/* HOW IT WORKS CARD */
+/* HOW IT WORKS */
 
 .how-card {
     padding: 28px;
@@ -165,6 +170,13 @@ nav a:hover {
     border-radius: 14px;
 }
 
+.label {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
 .how-card h2 {
     margin-top: 5px;
     margin-bottom: 22px;
@@ -172,7 +184,6 @@ nav a:hover {
 
 .how-step {
     display: flex;
-
     align-items: center;
 
     gap: 18px;
@@ -222,41 +233,32 @@ nav a:hover {
 }
 
 
-/* LABEL */
+/* OTHER PAGES */
 
-.label {
-    color: #2563eb;
-
-    font-size: 13px;
-    font-weight: bold;
+.page {
+    padding: 60px 0;
 }
 
+.page-title {
+    margin-bottom: 25px;
+}
 
-/* CARDS */
-
-.card,
 .form-card,
 .manage-card {
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 25px;
+
     background: white;
 
     border: 1px solid #ddd;
     border-radius: 12px;
-
-    padding: 25px;
 }
 
 
-/* SECTIONS */
-
-.section {
-    padding: 50px 0;
-
-    background: white;
-}
-
-.gray {
-    background: #f1f5f9;
-}
+/* TEMPLATE SELECTION CARDS */
 
 .cards {
     display: grid;
@@ -268,12 +270,18 @@ nav a:hover {
     margin-top: 30px;
 }
 
+.card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
 .card h3 {
     margin-bottom: 5px;
 }
-
-
-/* TEMPLATE PREVIEW */
 
 .template-sample {
     padding: 70px 20px;
@@ -299,24 +307,6 @@ nav a:hover {
     background: #0f172a;
 
     color: white;
-}
-
-
-/* PAGES */
-
-.page {
-    padding: 60px 0;
-}
-
-.page-title {
-    margin-bottom: 25px;
-}
-
-.form-card,
-.manage-card {
-    max-width: 750px;
-
-    margin: auto;
 }
 
 
@@ -387,6 +377,8 @@ textarea {
 
 
     .hero {
+        min-height: auto;
+
         padding: 45px 0;
     }
 
