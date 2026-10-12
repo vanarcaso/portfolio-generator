@@ -106,22 +106,26 @@ nav a:hover {
 }
 
 
-/* HOME */
+/* HOME HERO */
 
 .hero {
-    padding: 80px 0;
+    padding: 60px 0;
+
+    background: #f8fafc;
 }
 
 .hero-grid {
     display: grid;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
 
     align-items: center;
 }
 
 .hero-content {
-    max-width: 650px;
+    max-width: 600px;
 }
 
 .hero h1 {
@@ -139,21 +143,92 @@ nav a:hover {
     color: #2563eb;
 }
 
-.hero p {
-    max-width: 600px;
+.hero-content p {
+    max-width: 560px;
 
     font-size: 17px;
 }
+
+.actions {
+    margin-top: 25px;
+}
+
+
+/* HOW IT WORKS CARD */
+
+.how-card {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.how-card h2 {
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.how-step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px;
+
+    margin-bottom: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.how-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 50%;
+}
+
+.how-step h3 {
+    margin: 0 0 3px;
+}
+
+.how-step p {
+    margin: 0;
+
+    color: #475569;
+
+    line-height: 1.4;
+}
+
+
+/* LABEL */
 
 .label {
     color: #2563eb;
 
     font-size: 13px;
     font-weight: bold;
-}
-
-.actions {
-    margin-top: 25px;
 }
 
 
@@ -204,6 +279,7 @@ nav a:hover {
     padding: 70px 20px;
 
     text-align: center;
+
     font-weight: bold;
 }
 
@@ -311,7 +387,7 @@ textarea {
 
 
     .hero {
-        padding: 50px 0;
+        padding: 45px 0;
     }
 
 
@@ -322,6 +398,24 @@ textarea {
 
     .hero-content {
         max-width: 100%;
+    }
+
+
+    .how-card {
+        margin-top: 10px;
+    }
+
+
+    .how-step {
+        align-items: flex-start;
+    }
+
+
+    .step-number {
+        min-width: 48px;
+        height: 48px;
+
+        font-size: 16px;
     }
 
 
