@@ -219,6 +219,7 @@ notice.style.cssText =
     "box-shadow:0 10px 26px rgba(15,23,42,0.10);";
 
 view.parentNode.insertBefore(notice, view);
+}
 /* HELPERS */
 
 
