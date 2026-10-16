@@ -35,7 +35,15 @@ if (view) {
 }
 
 async function loadPortfolio() {
-    const id = new URLSearchParams(location.search).get("id");
+    const params = new URLSearchParams(location.search);
+const previewTemplate = params.get("preview");
+
+if (previewTemplate) {
+    showSamplePreview(previewTemplate);
+    return;
+}
+
+const id = params.get("id");
 
     if (!id) {
         view.innerHTML = "<p>Portfolio not found.</p>";
@@ -88,12 +96,110 @@ if (p.selected_template === "simple") {
     location.href = "templates.html";
 }
 }
+
+/* SAMPLE TEMPLATE PREVIEW */
+
+function showSamplePreview(templateName) {
+    const sampleData = {
+        p: {
+            full_name: "Jordan Lee",
+            profile_picture_url: "",
+            email: "jordan.lee@example.com",
+            contact_number: "000-000-0000",
+            address: "Sample City, Philippines",
+            about_me: "I am an IT student who enjoys building websites and learning new web technologies.",
+            website_url: "https://example.com",
+            facebook_url: "",
+            linkedin_url: "",
+            github_url: ""
+        },
+
+        education: [
+            {
+                school: "Northview College",
+                course_program: "BS Information Technology",
+                year: "3rd Year"
+            }
+        ],
+
+        skills: [
+            { skill_name: "HTML" },
+            { skill_name: "CSS" },
+            { skill_name: "JavaScript" },
+            { skill_name: "Supabase" }
+        ],
+
+        projects: [
+            {
+                title: "Campus Event Hub",
+                description: "A responsive website that helps students find campus events.",
+                link: "https://example.com"
+            }
+        ],
+
+        experiences: [
+            {
+                position: "Student Developer",
+                organization: "Campus Tech Club",
+                description: "Helped build web pages and improve mobile layouts."
+            }
+        ]
+    };
+
+    if (templateName === "simple") {
+        simple(sampleData);
+    } else if (templateName === "modern") {
+        modern(sampleData);
+    } else if (templateName === "creative") {
+        creative(sampleData);
+    } else {
+        view.innerHTML = `
+            <p class="loading">
+                Template not found.
+                <a href="templates.html">Back to templates</a>
+            </p>
+        `;
+        return;
+    }
+
+    const title = templateName.charAt(0).toUpperCase()
+        + templateName.slice(1);
+
+    document.title = `${title} Template Preview`;
+
+    const navLinks = document.querySelector(".portfolio-nav div");
+
+    if (navLinks) {
+        navLinks.innerHTML = `
+            <a href="index.html">Home</a>
+            <a href="templates.html">Back to Templates</a>
+        `;
+    }
+
+    const notice = document.createElement("div");
+
+    notice.textContent =
+        "Sample preview only — this uses fictional information and does not change your saved portfolio.";
+
+    notice.style.cssText =
+        "max-width:1050px;width:calc(100% - 32px);margin:20px auto 0;padding:12px 16px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;color:#1e40af;font-size:14px;";
+
+    view.parentNode.insertBefore(notice, view);
+}
 /* HELPERS */
 
-function photo(p) {
-    if (!p.profile_picture_url) {
-        return "";
+if (!p.profile_picture_url) {
+    if (new URLSearchParams(location.search).has("preview")) {
+        return `
+            <div class="profile-photo"
+                 style="display:flex;align-items:center;justify-content:center;background:#dbeafe;color:#1d4ed8;font-size:36px;font-weight:bold;">
+                JL
+            </div>
+        `;
     }
+
+    return "";
+}
 
     return `
         <img class="profile-photo"
