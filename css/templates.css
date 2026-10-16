@@ -722,4 +722,24 @@ body {
         grid-template-columns: 1fr;
     }
 
+    
+}
+/* GENERATED PORTFOLIO NAVBAR */
+
+.portfolio-nav {
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+}
+
+.portfolio-nav .nav-logo {
+    color: #f8fafc;
+}
+
+.portfolio-nav a {
+    color: #f8fafc;
+    transition: color 0.2s ease;
+}
+
+.portfolio-nav a:hover {
+    color: #93c5fd;
 }
