@@ -461,3 +461,15 @@ textarea {
 .site-header nav a:hover {
     color: #93c5fd;
 }
+
+/* ALIGN TEMPLATE SELECTION BUTTONS */
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .card .choose-template {
+    margin-top: auto;
+    align-self: flex-start;
+}
