@@ -103,7 +103,7 @@ function showSamplePreview(templateName) {
     const sampleData = {
         p: {
             full_name: "Jordan Lee",
-            profile_picture_url: "",
+            profile_picture_url: "images/profile_pic.jpg",
             email: "jordan.lee@example.com",
             contact_number: "000-000-0000",
             address: "Sample City, Philippines",
