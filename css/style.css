@@ -462,14 +462,23 @@ textarea {
     color: #93c5fd;
 }
 
-/* ALIGN TEMPLATE SELECTION BUTTONS */
+/* TEMPLATE CARD ACTION BUTTONS */
 
 .cards .card {
     display: flex;
     flex-direction: column;
 }
 
-.cards .card .choose-template {
+.template-actions {
     margin-top: auto;
+    padding-top: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cards .card .choose-template {
+    margin-top: 0;
     align-self: flex-start;
 }
