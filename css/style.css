@@ -467,18 +467,30 @@ textarea {
 .cards .card {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .template-actions {
     margin-top: auto;
     padding-top: 14px;
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.template-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 10px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .cards .card .choose-template {
     margin-top: 0;
-    align-self: flex-start;
+    align-self: stretch;
 }
+
