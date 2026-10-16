@@ -441,3 +441,23 @@ textarea {
     border-radius: 8px;
     margin-bottom: 16px;
 }
+
+/* NAVBAR COLOR UPDATE */
+
+.site-header {
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+}
+
+.site-header .logo {
+    color: #f8fafc;
+}
+
+.site-header nav a {
+    color: #f8fafc;
+    transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+    color: #93c5fd;
+}
