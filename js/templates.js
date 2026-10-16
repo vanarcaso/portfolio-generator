@@ -188,19 +188,20 @@ function showSamplePreview(templateName) {
 }
 /* HELPERS */
 
-if (!p.profile_picture_url) {
-    if (new URLSearchParams(location.search).has("preview")) {
-        return `
-            <div class="profile-photo"
-                 style="display:flex;align-items:center;justify-content:center;background:#dbeafe;color:#1d4ed8;font-size:36px;font-weight:bold;">
-                JL
-            </div>
-        `;
-    }
 
-    
-    return "";
-}
+function photo(p) {
+    if (!p.profile_picture_url) {
+        if (new URLSearchParams(location.search).has("preview")) {
+            return `
+                <div class="profile-photo"
+                     style="display:flex;align-items:center;justify-content:center;background:#dbeafe;color:#1d4ed8;font-size:36px;font-weight:bold;">
+                    JL
+                </div>
+            `;
+        }
+
+        return "";
+    }
 
     return `
         <img class="profile-photo"
