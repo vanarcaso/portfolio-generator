@@ -609,3 +609,15 @@ textarea {
     background: #b91c1c;
     border-color: #b91c1c;
 }
+
+/* MANAGE PAGE BACKGROUND */
+
+#managePage {
+    background: #0f172a;
+    min-height: calc(100vh - 70px);
+}
+
+#managePage .manage-card {
+    border-color: #334155;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
