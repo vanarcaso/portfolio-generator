@@ -622,7 +622,7 @@ textarea {
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
 
-/* TEMPLATE PAGE NAVY BACKGROUND */
+/* TEMPLATE PAGE BACKGROUND AND TEXT */
 
 .templates-page {
     background: #0f172a;
@@ -651,6 +651,15 @@ textarea {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* BACK BUTTON */
+
+.templates-page #templateBackButton {
+    margin-top: 0;
+    margin-bottom: 24px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
 /* BACK BUTTON */
 
 .templates-page #templateBackButton {
