@@ -494,3 +494,26 @@ textarea {
     align-self: stretch;
 }
 
+/* TEMPLATE BUTTON COLORS */
+
+.template-actions a.btn.outline {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.template-actions a.btn.outline:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.template-actions .choose-template {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
+
+.template-actions .choose-template:hover {
+    background: #1e293b;
+    border-color: #1e293b;
+}
