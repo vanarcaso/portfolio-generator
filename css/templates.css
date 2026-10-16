@@ -568,7 +568,51 @@ body {
     color: #a78bfa;
 }
 
+/* CREATIVE DESIGN POLISH */
 
+.creative-hero {
+    background: linear-gradient(135deg, #0f172a, #312e81);
+    border: 1px solid #4338ca;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);
+}
+
+.creative-photo .profile-photo {
+    box-shadow: 0 0 0 6px rgba(167, 139, 250, 0.15);
+}
+
+.creative-intro h1 {
+    text-shadow: 0 0 24px rgba(167, 139, 250, 0.2);
+}
+
+.creative-about {
+    border: 1px solid #e9d5ff;
+    border-left: 5px solid #8b5cf6;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.creative-card {
+    background: #ffffff;
+    border: 1px solid #ddd6fe;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(76, 29, 149, 0.08);
+}
+
+.creative-card h2 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ede9fe;
+}
+
+.creative-card .skills span {
+    background: #ede9fe;
+    color: #4c1d95;
+    border: 1px solid #ddd6fe;
+}
+
+.creative-contact {
+    border: 1px solid #4338ca;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.15);
+}
 /* =================================
    MOBILE
    ================================= */
