@@ -176,16 +176,49 @@ function showSamplePreview(templateName) {
         `;
     }
 
-    const notice = document.createElement("div");
+   const notice = document.createElement("div");
 
-    notice.textContent =
-        "Sample preview only: This is just a sample information. This preview does not save, change, or replace your portfolio. When you select this template for your own portfolio, your saved information will appear in this design.";
+notice.setAttribute("role", "note");
 
-    notice.style.cssText =
-        "max-width:1050px;width:calc(100% - 32px);margin:20px auto 0;padding:12px 16px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;color:#1e40af;font-size:14px;";
+notice.innerHTML =
+    "<strong>Sample preview only:</strong> This is just a sample information. This preview does not save, change, or replace your portfolio. When you select this template for your own portfolio, your saved information will appear in this design.";
 
-    view.parentNode.insertBefore(notice, view);
-}
+// Match the sign to each template's design
+const isCreative = templateName === "creative";
+
+const noticeWidth =
+    templateName === "simple" ? "950px" : "1050px";
+
+const noticeBackground =
+    isCreative ? "#f5f3ff" : "#eff6ff";
+
+const noticeBorder =
+    isCreative ? "#ddd6fe" : "#bfdbfe";
+
+const noticeAccent =
+    isCreative ? "#8b5cf6" : "#2563eb";
+
+const noticeTextColor =
+    isCreative ? "#4c1d95" : "#1e40af";
+
+// Style the sample-preview sign
+notice.style.cssText =
+    "box-sizing:border-box;" +
+    "display:block;" +
+    "width:calc(100% - 32px);" +
+    "max-width:" + noticeWidth + ";" +
+    "margin:20px auto 0;" +
+    "padding:18px 22px;" +
+    "background:" + noticeBackground + ";" +
+    "border:1px solid " + noticeBorder + ";" +
+    "border-left:6px solid " + noticeAccent + ";" +
+    "border-radius:14px;" +
+    "color:" + noticeTextColor + ";" +
+    "font-size:16px;" +
+    "line-height:1.65;" +
+    "box-shadow:0 10px 26px rgba(15,23,42,0.10);";
+
+view.parentNode.insertBefore(notice, view);
 /* HELPERS */
 
 
