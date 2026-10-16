@@ -621,3 +621,45 @@ textarea {
     border-color: #334155;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
 }
+
+/* TEMPLATE PAGE NAVY BACKGROUND */
+
+.templates-page {
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: calc(100vh - 70px);
+}
+
+.templates-page .page-title h1 {
+    color: #f8fafc;
+}
+
+.templates-page .page-title .label {
+    color: #93c5fd;
+}
+
+.templates-page .page-title p:not(.label) {
+    color: #cbd5e1;
+}
+
+/* KEEP TEMPLATE CARDS WHITE */
+
+.templates-page .card {
+    background: #ffffff;
+    color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* BACK BUTTON */
+
+.templates-page #templateBackButton {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.templates-page #templateBackButton:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
