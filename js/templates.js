@@ -179,7 +179,7 @@ function showSamplePreview(templateName) {
     const notice = document.createElement("div");
 
     notice.textContent =
-        "Sample preview only — this uses fictional information and does not change your saved portfolio.";
+        "Sample preview only: This is just a sample information. This preview does not save, change, or replace your portfolio. When you select this template for your own portfolio, your saved information will appear in this design.";
 
     notice.style.cssText =
         "max-width:1050px;width:calc(100% - 32px);margin:20px auto 0;padding:12px 16px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;color:#1e40af;font-size:14px;";
