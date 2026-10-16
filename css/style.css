@@ -517,3 +517,38 @@ textarea {
     background: #1e293b;
     border-color: #1e293b;
 }
+
+/* MANAGE PORTFOLIO BUTTON COLORS */
+
+.manage-actions #viewPortfolio {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
+
+.manage-actions #viewPortfolio:hover {
+    background: #1e293b;
+    border-color: #1e293b;
+}
+
+.manage-actions a.btn.outline {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.manage-actions a.btn.outline:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.manage-actions button.danger {
+    background: #dc2626;
+    color: #ffffff;
+    border: 1px solid #dc2626;
+}
+
+.manage-actions button.danger:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+}
