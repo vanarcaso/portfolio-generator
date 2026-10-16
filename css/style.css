@@ -672,3 +672,68 @@ textarea {
     background: #dbeafe;
     color: #1e40af;
 }
+
+/* PORTFOLIO FORM PAGE */
+
+.form-page {
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: calc(100vh - 70px);
+}
+
+/* WHITE FORM CARD */
+
+.form-page .form-card {
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* FORM TITLE */
+
+.form-page .form-card h1 {
+    color: #0f172a;
+    margin-top: 0;
+}
+
+.form-page .form-card > p {
+    color: #475569;
+}
+
+/* FORM SECTION HEADINGS */
+
+.form-page .form-card h3 {
+    color: #0f172a;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dbeafe;
+}
+
+/* WIDE, CENTERED BUTTONS */
+
+.form-page .form-card #cancelButton,
+.form-page .form-card button[type="submit"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+    margin-top: 12px;
+}
+
+/* CANCEL BUTTON */
+
+.form-page .form-card #cancelButton {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+/* SAVE & CONTINUE BUTTON */
+
+.form-page .form-card button[type="submit"] {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
