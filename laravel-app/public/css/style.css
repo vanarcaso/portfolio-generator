@@ -1,0 +1,739 @@
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f8fafc;
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.site-header {
+    background: white;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: white;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.outline {
+    background: white;
+
+    color: #2563eb;
+
+    border: 1px solid #2563eb;
+}
+
+.outline:hover {
+    background: #2563eb;
+
+    color: white;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.danger:hover {
+    background: #b91c1c;
+}
+
+#templateBackButton {
+    margin-top: 16px;
+}
+
+/* HOME HERO */
+
+.hero {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 0;
+
+    background: #f8fafc;
+}
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #2563eb;
+}
+
+.hero-content p {
+    max-width: 560px;
+
+    font-size: 17px;
+}
+
+.actions {
+    margin-top: 25px;
+}
+
+
+/* HOW IT WORKS */
+
+.how-card {
+    padding: 28px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.label {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.how-card h2 {
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+.how-step {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 15px;
+
+    margin-bottom: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.how-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 50%;
+}
+
+.how-step h3 {
+    margin: 0 0 3px;
+}
+
+.how-step p {
+    margin: 0;
+
+    color: #475569;
+
+    line-height: 1.4;
+}
+
+
+/* OTHER PAGES */
+
+.page {
+    padding: 60px 0;
+}
+
+.page-title {
+    margin-bottom: 25px;
+}
+
+.form-card,
+.manage-card {
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+
+/* TEMPLATE SELECTION CARDS */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.card {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+}
+
+.template-sample {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.simple {
+    background: white;
+
+    color: #1e293b;
+}
+
+.modern {
+    background: #dbeafe;
+
+    color: #2563eb;
+}
+
+.creative {
+    background: #0f172a;
+
+    color: white;
+}
+
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+}
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.message {
+    margin-top: 15px;
+}
+
+
+/* MANAGE */
+
+.manage-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .hero-grid,
+    .cards,
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+        min-height: auto;
+
+        padding: 45px 0;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+
+    .how-card {
+        margin-top: 10px;
+    }
+
+
+    .how-step {
+        align-items: flex-start;
+    }
+
+
+    .step-number {
+        min-width: 48px;
+        height: 48px;
+
+        font-size: 16px;
+    }
+
+
+    .nav {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 15px 0;
+    }
+
+
+    nav {
+        gap: 15px;
+    }
+
+}
+
+/* TEMPLATE PREVIEW IMAGES */
+
+.template-preview-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: top center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* NAVBAR COLOR UPDATE */
+
+.site-header {
+    background: #0f172a;
+    border-bottom: 1px solid #334155;
+}
+
+.site-header .logo {
+    color: #f8fafc;
+}
+
+.site-header nav a {
+    color: #f8fafc;
+    transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+    color: #93c5fd;
+}
+
+/* TEMPLATE CARD ACTION BUTTONS */
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.template-actions {
+    margin-top: auto;
+    padding-top: 14px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.template-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 10px 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cards .card .choose-template {
+    margin-top: 0;
+    align-self: stretch;
+}
+
+/* TEMPLATE BUTTON COLORS */
+
+.template-actions a.btn.outline {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.template-actions a.btn.outline:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.template-actions .choose-template {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
+
+.template-actions .choose-template:hover {
+    background: #1e293b;
+    border-color: #1e293b;
+}
+
+/* MANAGE PORTFOLIO BUTTON COLORS */
+
+.manage-actions #viewPortfolio {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
+
+.manage-actions #viewPortfolio:hover {
+    background: #1e293b;
+    border-color: #1e293b;
+}
+
+.manage-actions a.btn.outline {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.manage-actions a.btn.outline:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.manage-actions button.danger {
+    background: #dc2626;
+    color: #ffffff;
+    border: 1px solid #dc2626;
+}
+
+.manage-actions button.danger:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+}
+
+/* MANAGE PORTFOLIO BUTTON LAYOUT */
+
+.manage-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.manage-actions .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+}
+
+/* VIEW PORTFOLIO */
+
+.manage-actions #viewPortfolio {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}
+
+.manage-actions #viewPortfolio:hover {
+    background: #1e293b;
+    border-color: #1e293b;
+}
+
+/* EDIT AND CHANGE TEMPLATE */
+
+.manage-actions a.btn.outline {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.manage-actions a.btn.outline:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+/* DELETE PORTFOLIO */
+
+.manage-actions button.danger {
+    background: #dc2626;
+    color: #ffffff;
+    border: 1px solid #dc2626;
+}
+
+.manage-actions button.danger:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+}
+
+/* MANAGE PAGE BACKGROUND */
+
+#managePage {
+    background: #0f172a;
+    min-height: calc(100vh - 70px);
+}
+
+#managePage .manage-card {
+    border-color: #334155;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* TEMPLATE PAGE BACKGROUND AND TEXT */
+
+.templates-page {
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: calc(100vh - 70px);
+}
+
+.templates-page .page-title h1 {
+    color: #f8fafc;
+}
+
+.templates-page .page-title .label {
+    color: #93c5fd;
+}
+
+.templates-page .page-title p:not(.label) {
+    color: #cbd5e1;
+}
+
+/* KEEP TEMPLATE CARDS WHITE */
+
+.templates-page .card {
+    background: #ffffff;
+    color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* BACK BUTTON */
+
+.templates-page #templateBackButton {
+    margin-top: 0;
+    margin-bottom: 24px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+/* BACK BUTTON */
+
+.templates-page #templateBackButton {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+.templates-page #templateBackButton:hover {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+/* PORTFOLIO FORM PAGE */
+
+.form-page {
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: calc(100vh - 70px);
+}
+
+/* WHITE FORM CARD */
+
+.form-page .form-card {
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #334155;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* FORM TITLE */
+
+.form-page .form-card h1 {
+    color: #0f172a;
+    margin-top: 0;
+}
+
+.form-page .form-card > p {
+    color: #475569;
+}
+
+/* FORM SECTION HEADINGS */
+
+.form-page .form-card h3 {
+    color: #0f172a;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dbeafe;
+}
+
+/* WIDE, CENTERED BUTTONS */
+
+.form-page .form-card #cancelButton,
+.form-page .form-card button[type="submit"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 18px;
+    margin-top: 12px;
+}
+
+/* CANCEL BUTTON */
+
+.form-page .form-card #cancelButton {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #93c5fd;
+}
+
+/* SAVE & CONTINUE BUTTON */
+
+.form-page .form-card button[type="submit"] {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #0f172a;
+}

@@ -1,1 +1,0 @@
-Portfolio template preview images.
